@@ -1,0 +1,38 @@
+{
+  "name": "turog",
+  "version": "0.1.0",
+  "private": true,
+
+
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js",
+    "homepage":"https://controlf5.co.in/client-demo/turog"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.1",
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@headlessui/react": "^1.7.5",
+    "@heroicons/react": "^2.0.13",
+    "@material-tailwind/react": "^1.2.4",
+    "eslint": "8.29.0",
+    "eslint-config-next": "13.0.6",
+    "fontawesome": "^5.6.3",
+    "heroicons": "^2.0.13",
+    "next": "^13.0.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-easy-swipe": "^0.0.22",
+    "react-icons": "^4.7.1",
+    "swiper": "^8.4.5"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "eslint-config-prettier": "^8.5.0",
+    "postcss": "^8.4.20",
+    "tailwindcss": "^3.2.4",
+    "tw-elements": "^1.0.0-alpha13"
+  }
+}

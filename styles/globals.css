@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.abt-main img {
+  margin-top: 66px;
+}
+.leadr svg {
+  margin-right: 10px;
+}
+.leadr button {
+  padding: 16px 25px;
+  border-radius: 5px;
+  line-height: 0;
+}
+.leadr h5 {
+  margin-bottom: 9px;
+}
+.leadr p {
+  margin-bottom: 27px;
+}
+.leadr a {
+  color: #FCAE31;
+}
+.leadr img {
+  border-radius: 13px !important;
+  width: 100%;
+}
+.leadr .rounded-lg {
+  margin-left: 17px;
+  margin-right: 19px;
+  box-shadow: 1px 1px 20px 13px #efefef;
+}
+p {
+color: #5F5F5F;
+
+}
+.fqs-main {
+  background: #fff8f1;
+}
+.fqs-main .block::after {
+  -ms-flex-shrink: 0;
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  transition: transform .2s ease-in-out;
+}
+body{
+  font-family: 'Mulish', sans-serif;
+}
+.fqs-main .block.relative.w-full button {
+  font-weight: 700;
+  border: none;
+  padding-bottom: 0;
+}
+.fqs-main .leading-normal {
+  font-size: 16px;
+  line-height: 26px;
+  color: #5F5F5F;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 10px;
+}
+.fqs-main .max-w-7xl .w-1\/2 {
+  margin-left: 21px;
+  margin-right: 21px;
+}
+.bg-stons-900 {
+  background: #302E2E;
+}
+footer p {
+  color: #949494;
+}
+footer p a {
+  color: #949494 !important;
+}
+footer .border-gray-300 {
+  border-color: #454545;
+}
+footer .border-gray-300 {
+  border-color: #454545;
+}
+footer span.text-2xl {
+  font-size: 25px;
+}
+.newslt .form-group.mr-2 {
+  width: 100%;
+}
+form.flex.newslt {
+  width: 100%;
+}
+.socials svg path {
+  fill: #949494;
+}
+.socials a {
+  background: #252525;
+  padding: 5px;
+  width: 31px;
+  border-radius: 5px;
+  height: 31px;
+  display: flex;
+}
+.socials a svg {
+  width: 16px;
+  margin: 0 auto;
+}
+a.hovs:hover, button.hovs:hover {
+  background: #000;
+  transition: 0.6s;
+}
+a.hovs, button.hovs {
+  transition: 0.6s;
+}
+
+.cn-fo input {
+  border-color: #EDEDED;
+}
+
+.cn-fo textarea {
+  border-color: #EDEDED;
+}
+.tabss .from-red-500 svg {
+  display: block;
+}
+.tabss svg {
+  display: none;
+}
+.tabss .from-red-500 {
+  font-weight: 800;
+}
+.carousel-control-next-icon {
+background-size: 50%;
+}
+.carousel-control-prev-icon{
+  background-size: 50%;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+@media(max-width:768px){  
+.social-icons-centers {
+  justify-content: center;
+}
+.map-iconss {
+  width: 25px;
+}
+.footer-para-linkss svg {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+.footer-para-linkss {
+  display: block;
+  text-align: center;
+}
+
+}
+
