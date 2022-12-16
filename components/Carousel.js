@@ -41,7 +41,7 @@ export default function Carousel() {
   </div>
   <div className="carousel-inner relative pb-28 pt-28 w-full overflow-hidden">
     <div className="carousel-item active relative float-left w-full">
-    <div className='lg:max-w-7xl lg:p-4 py-20	 mx-auto lg:flex lg:justify-between lg:items-center'>
+    <div className='lg:max-w-7xl p-4  mx-auto lg:flex justify-between items-center '>
                   <div class="w-1/2 pr-6">
                   <h3 className="text-5xl font-Mulish pb-5">TUROG Technologies is a digital transformation company</h3>
                         <p className="font-Mulish mb-10">TUROG Technologies is a digital transformation company that<br/>

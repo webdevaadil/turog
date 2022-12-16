@@ -8,7 +8,8 @@ const Tabs = () => {
   const [openTab, setOpenTab] = React.useState(1);
   return (
     <>
-    <div className="-m-12"> 
+     <div className="s-line"> 
+    <div className="-m-12 w-full"> 
 
 
     <svg className="mx-auto" width="1199" height="76" viewBox="0 0 1199 76" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -17,11 +18,11 @@ const Tabs = () => {
 
 
 
-
+</div>
 
     </div>
       
-    <div id="service-of" className="mx-auto max-w-7xl px-4 py-2 text-center pb-20">
+    <div id="service-of" className="ser-wrapper mx-auto max-w-7xl px-4 py-2 text-center pb-20">
 
 <h3 className="text-4xl font-extrabold font-Mulish mb-2 mt-4">Service Offerings</h3>
 <p className="text-base text-gray-400 font-regular font-Mulish">We strive to provide the best possible services to our clients and are committed to <br/>helping them succeed in their digital transformation journey.</p>
@@ -137,7 +138,7 @@ const Tabs = () => {
 
 
           </ul>
-          <div className="w-7/12 relative flex flex-col min-w-0 break-words">
+          <div className="dgs-wrapper w-7/12 relative flex flex-col min-w-0 break-words">
             <div className="px-4 py-0 flex-auto ml-11	">
               <div className="tab-content tab-space">
                 <div className={openTab === 1 ? "block" : "hidden"} id="link1">

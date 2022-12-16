@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export const Contact = () => {
   return (
-    <div>
+    <div className='cls-f'>
 
 <div id='contact' className='mx-auto max-w-7xl px-4 py-2 text-center'>
 

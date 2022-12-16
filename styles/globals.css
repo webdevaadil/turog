@@ -145,6 +145,107 @@ html {
 }
 
 
+@media(max-width:1200px){  
+  .foot-wrapper {
+    max-width: 95%;
+}
+.cls-f {
+  max-width: 95%;
+  margin: 0 auto;
+}
+.fqs-main .block.relative.w-full button {
+  text-align: left;
+}
+.abt-main {
+  max-width: 95%;
+}
+.s-line svg.mx-auto {
+  width: 100%;
+}
+.s-line .-m-12 {
+margin: 0 auto;
+max-width: 95%;
+}
+.carousel-control-prev {
+  justify-content: left;
+}
+.carousel-control-next {
+  justify-content: end;
+}
+.carousel-item .lg\:max-w-7xl{
+  max-width: 92%;
+}
+p.font-Mulish.mb-10 br {
+  display: none;
+}
+.carousel-item a {
+  width: max-content;
+}
+.carousel-item p.font-Mulish.mb-10 {
+  margin-bottom: 19px;
+}
+
+}
+
+@media(max-width:992px){  
+  .carousel-inner {
+    padding-top: 29px;
+    padding-bottom: 20px;
+}
+.carousel-item h3 {
+  font-size: 31px;
+  line-height: 35px;
+}
+
+.fqs-main .block.relative.w-full button {
+  font-size: 16px;
+  line-height: 21px;
+}
+.carousel-item  .py-20 {
+  padding-top: 6px;
+  padding-bottom: 35px;
+}
+.abt-main {
+  margin-top: 50px;
+}
+.s-line {
+  margin-top: 28px;
+  margin-bottom: -38px;
+}
+.ser-wrapper a.text-lg {
+  padding: 13px;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+.dgs-wrapper .px-4 {
+  margin-left: 0;
+}
+.leadr button {
+  padding: 11px 18px;
+  line-height: normal;
+}
+.cls-f form {
+  margin-top: 41px;
+}
+.fqs-main {
+  background: #fff8f1;
+  margin-top: 67px;
+  padding-top: 43px;
+}
+.leadr .rounded-lg {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.ser-wrapper {
+  padding-bottom: 42px;
+}
+
+
+
+}
+
+
+
 @media(max-width:768px){  
 .social-icons-centers {
   justify-content: center;
@@ -161,6 +262,175 @@ html {
   display: block;
   text-align: center;
 }
+.mbwrapper {
+  z-index: 9;
+}
+.mbwrapper .grid.grid-cols-2.gap-y-4.gap-x-8 {
+  display: none;
+}
+.mbwrapper .space-y-6.py-6.px-5 {
+  padding-top: 0;
+}
+.mbwrapper a svg {
+  display: none;
+}
+
+
+
 
 }
 
+@media(max-width:640px){  
+  .carousel-item .lg\:max-w-7xl {
+    display: block;
+}
+.carousel-item .lg\:max-w-7xl .w-1\/2 {
+  width: 100%;
+  padding: 0;
+}
+.carousel-item .lg\:max-w-7xl .w-1\/2 img {
+  margin-top: 33px;
+  margin-right: 0 !important;
+}
+.abt-main div#abts-us {
+  display: block;
+}
+.abt-main .w-1\/2 {
+  width: 100%;
+}
+.abt-main .w-1\/2 img {
+  margin-bottom: -60px;
+}
+.ser-wrapper .w-full {
+  display: block;
+}
+.ser-wrapper .w-full ul.w-5\/12 {
+  width: 100%;
+}
+.dgs-wrapper {
+  width: 100%;
+}
+.faq-clms {
+  display: block;
+  max-width: 95%;
+  margin: 0 auto;
+}
+.faq-clms .w-1\/2 {
+  width: 100%;
+  margin: 0 !important;
+}
+.leadr {
+  display: block;
+}
+.leadr .rounded-lg.bg-white.max-w-sm {
+  max-width: 100%;
+  margin-bottom: 32px;
+}
+.form-news {
+  width: 90%;
+}
+
+
+}
+
+
+@media(max-width:568px){  
+
+  .abt-main .w-1\/2 img {
+    margin-bottom: -21px;
+}
+.s-line {
+  margin-top: 7px;
+  margin-bottom: -38px;
+}
+.tab-content h4 {
+  font-size: 22px;
+  line-height: 27px;
+} 
+.fqs-main  h3.font-extrabold {
+  font-size: 25px;
+  line-height: 33px;
+}
+.cls-f  h3.font-extrabold {
+  font-size: 25px;
+  line-height: 33px;
+}
+.ser-wrapper  h3 {
+  font-size: 25px;
+  line-height: 33px;
+
+}
+.abt-main  h2{
+  font-size: 25px;
+  line-height: 33px;
+}
+p.text-base br {
+  display: none;
+}
+.lead-main h3{
+  font-size: 25px;
+  line-height: 33px;
+
+}
+.fqs-main {
+  margin-bottom: 13px;
+}
+.newslt {
+  display: block;
+}
+.newslt button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 14px;
+}
+
+footer h6 {
+  margin-bottom: 6px;
+}
+footer .lg\:w-4\/12.md\:w-6\/12.sm\:w-12\/12.max-\[600px\]\:mb-3 {
+  margin-bottom: 32px;
+}
+footer h6.uppercase.font-extrabold.mb-12.flex.items-center.justify-center.md\:justify-start {
+  margin-bottom: 30px;
+}
+.cn-fo  .form-control {
+  padding: 8px 19px;
+}
+.cn-fo textarea {
+  height: auto;
+}
+button.w-full.px-5 {
+  padding: 10px;
+}
+.cls-f .md\:w-full.m-0.lg\:w-1\/2.mr-6 {
+  margin-right: 0;
+}
+.dgs-wrapper .px-4 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.ser-wrapper .flex.flex-wrap.items-start.mt-9.text-left {
+  margin-top: 12px;
+}
+
+footer .font-extrabold {
+  font-weight: 800;
+  margin-top: 31px;
+}
+.social-icons-centers {
+  justify-content: center;
+  margin-top: 15px;
+}
+.carousel-item a {
+  margin: 0 auto;
+}
+.carousel-item.relative.float-left.w-full {
+  text-align: center;
+}
+.carousel-item h3 {
+  font-size: 25px;
+  line-height: 29px;
+}
+
+
+}

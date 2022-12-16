@@ -6,13 +6,13 @@ const Footer = () => {
     <div>
 
 <footer className="text-center lg:text-left bg-stons-900 text-zinc-400	">
-    <div className='max-w-7xl mx-auto '>
-  <div className="flex justify-center items-center lg:justify-between py-10 border-b border-gray-300">
+    <div className='max-w-7xl  mx-auto foot-wrapper'>
+  <div className="flex  justify-center items-center lg:justify-between py-10 border-b border-gray-300">
     <div className="mr-12 hidden lg:block text-white">
       <span className='text-2xl	font-extrabold'>Subscribe to our NewsLetter! </span>
       <p className='text-white mt-3'> We send the newsletter once a week every friday </p>
     </div>
-    <div className="flex justify-end w-3/5
+    <div className="flex form-news justify-end w-3/5
 ">
   
     <form className='flex newslt'>
@@ -114,7 +114,7 @@ const Footer = () => {
 
         <div className="social-icons-centers flex justify-left">
 
-      <a href="#!" className="mr-2 sm:float-right  text-gray-600">
+      <a href="#!" className="mr-2  sm:float-right  text-gray-600">
         <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter"
           className="w-6" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
           <path fill="currentColor"

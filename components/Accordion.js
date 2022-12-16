@@ -32,7 +32,7 @@ export default function Faq() {
 
       
 
-                <div className="flex">
+                <div className="flex faq-clms">
       <div className="w-1/2">  
                     <Fragment>
       <Accordion open={open === 1}>
