@@ -20,3 +20,14 @@ module.exports = {
     ignoreDuringBuilds: true,
   },
 }
+module.exports = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'http',
+        hostname: '34.122.203.107',
+        port: '1339',
+      },
+    ],
+  },
+}
