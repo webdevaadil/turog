@@ -38,6 +38,7 @@ export default function Carousel() {
         <div className="carousel-indicators opacity-0 absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
           {firstslider &&
             firstslider.map((item, index) => {
+              console.log(item.attributes.Img);
               return (
                 <button
                   type="button"
@@ -53,7 +54,7 @@ export default function Carousel() {
         <div className="carousel-inner relative pb-28 pt-28 w-full overflow-hidden">
           {firstslider &&
             firstslider.map((item, index) => {
-             
+            //  console.log();
               return (
                 <>
                   <div className={` ${index ===0 ? 'carousel-item active relative float-left w-full' : 'carousel-item relative float-left w-full'}`} >
@@ -87,14 +88,15 @@ export default function Carousel() {
                         </a>
                       </div>
                       <div className="w-1/2">
-                        
-                            {/* <Image
+                        {item.attributes.Img.data?(
+                            <img
                             className=""
-                            src={item.attributes.Img && item.attributes.Img.data.attributes.name}
+                            src={`http://34.122.203.107:1339${item.attributes.Img.data[0].attributes.url}`}
                             alt=""
                             width={585}
                             height={382}
-                            /> */}
+                            />
+                            ):("")}
                          
                       </div>
                     </div>

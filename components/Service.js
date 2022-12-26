@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from "react";
-import digital from "../components/image/Digitaltransfo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowRight,
   faArrowRightLong,
   faCoffee,
 } from "@fortawesome/free-solid-svg-icons";
-import Image from "next/image";
 import axios from "axios";
 
 const Tabs = () => {
@@ -21,7 +19,7 @@ const Tabs = () => {
         "bearer 4f9279d262abf04c34eb2e03e603b321d9545e0933473e65c704e12f12c87b6be9c7668de8a178ab2ac3b6d6f578e59c92b1626d4e1f460a08cebd870e3b38acfa61337df1428a0373cbc7d5fc962248ea189b0305871522728d24be8354ca0456feccbb8b9d46e445bd71dee6d109575c9bae1e1a0f26ca36d33921a58e0fe5",
     };
     await axios
-      .get("http://34.122.203.107:1339/api/service-offerings?populate=Img", {
+      .get("http://34.122.203.107:1339/api/service-offerings?populate=img", {
         headers: headers,
       })
       .then((res) => setserviceoffering(res.data.data));
@@ -103,6 +101,7 @@ const Tabs = () => {
                 <div className="tab-content tab-space">
                 {serviceoffering &&
             serviceoffering.map((item, index) => {
+              console.log(item.attributes);
               return (
                   <div
                     className={openTab === index+1 ? "block" : "hidden"}
@@ -115,14 +114,17 @@ const Tabs = () => {
                  {item.attributes.Description}
                      
                     </p>
-
-                    <Image
+                    {item.attributes.img.data ? (
+                    <img
                       className="rounded block mt-7 w-full"
-                      src={digital.src}
+                      src={`http://34.122.203.107:1339${item.attributes.img.data[0].attributes.url}`}
                       width={624}
                       height={330}
                       alt="servies-img"
                     />
+                     ) : (
+                      ""
+                    )} 
                   </div>
                    )
                   })}

@@ -1,8 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import contactimg from "../components/image/Contact-img.png";
 import Image from "next/image";
+import axios from "axios";
 
 export const Contact = () => {
+  const [serviceoffering, setserviceoffering] = useState();
+
+  useEffect(() => {
+    fetchserviceoffering();
+  }, []);
+
+  const fetchserviceoffering = async () => {
+    let headers = {
+      Authorization:
+        "bearer 4f9279d262abf04c34eb2e03e603b321d9545e0933473e65c704e12f12c87b6be9c7668de8a178ab2ac3b6d6f578e59c92b1626d4e1f460a08cebd870e3b38acfa61337df1428a0373cbc7d5fc962248ea189b0305871522728d24be8354ca0456feccbb8b9d46e445bd71dee6d109575c9bae1e1a0f26ca36d33921a58e0fe5",
+    };
+    await axios
+      .get("http://34.122.203.107:1339/api/contact-uses?populate=Img", {
+        headers: headers,
+      })
+      .then((res) => setserviceoffering(res.data.data));
+  };
+
+  console.log(serviceoffering);
   return (
     <div className="cls-f">
       <div id="contact" className="mx-auto max-w-7xl px-4 py-2 text-center">
@@ -19,13 +39,19 @@ export const Contact = () => {
       <div className="max-w-7xl m-auto cn-fo mt-9 mb-20 mx-auto">
         <div className="md:block lg:flex items-center w-100 ">
           <div className="md:w-full m-0 lg:w-1/2 mr-6">
-            <Image
+          {serviceoffering &&
+            serviceoffering.map((item, index) => {
+              console.log(item.attributes.Img.data[0].attributes.url);
+              return (
+            <img
               className="rounded-xl block mr-0 w-full"
-              src={contactimg.src}
+              src={`http://34.122.203.107:1339${item.attributes.Img.data[0].attributes.url}`}
               alt="contact-img"
               width={571}
               height={433}
             />
+            );
+          })}
           </div>
           <div className="md:w-full md:ml-0 lg:w-1/2 lg:ml-4">
             <div className="block bg-white w-100">

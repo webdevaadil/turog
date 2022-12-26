@@ -1,5 +1,3 @@
-import abtus from "../components/image/abt-us.webp";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -24,26 +22,32 @@ export const About = () => {
     <div className="abt-main max-w-7xl mx-auto ">
       {}
       <div id="abts-us" className="flex items-center">
-        <div className="w-1/2">
-          <Image
-            className=""
-            src={abtus.src}
-            alt="Avatar"
-            width={700}
-            height={447}
-          />
-        </div>
         {aboutus &&
           aboutus.map((item, index) => {
             return (
-              <div className="w-1/2">
-                <h2 className="text-4xl font-extrabold font-Mulish mb-6">
-                  About Us{" "}
-                </h2>
-                <p className="font-Mulish mb-2">
-                 {item.attributes.Description}
-                </p>
-              </div>
+              <>
+                <div className="w-1/2">
+                  {item.attributes.Img.data ? (
+                    <img
+                      className=""
+                      src={`http://34.122.203.107:1339${item.attributes.Img.data[0].attributes.url}`}
+                      alt="Avatar"
+                      width={700}
+                      height={447}
+                    />
+                  ) : (
+                    ""
+                  )}
+                </div>
+                <div className="w-1/2">
+                  <h2 className="text-4xl font-extrabold font-Mulish mb-6">
+                    About Us{" "}
+                  </h2>
+                  <p className="font-Mulish mb-2">
+                    {item.attributes.Description}
+                  </p>
+                </div>
+              </>
             );
           })}
       </div>

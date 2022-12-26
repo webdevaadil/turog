@@ -1,7 +1,4 @@
-import lead1 from "../components/image/leader-1.png";
-import lead2 from "../components/image/leader-2.png";
-import lead3 from "../components/image/leader-3.png";
-import Image from "next/image";
+
 import axios from "axios";
 import { useEffect, useState } from "react";
 
@@ -38,6 +35,7 @@ export const Leadership = () => {
       <div className="flex justify-center leadr">
         {throghleadership &&
           throghleadership.map((item, index) => {
+            console.log(item.attributes)
             return (
               <div className="rounded-lg shadow-lg bg-white max-w-sm">
                 <a
@@ -46,9 +44,9 @@ export const Leadership = () => {
                   data-mdb-ripple="true"
                   data-mdb-ripple-color="light"
                 >
-                  <Image
+                  <img
                     className="rounded-t-lg"
-                    src={lead1.src}
+                    src={`http://34.122.203.107:1339${item.attributes.Img.data[0].attributes.url}`}
                     alt=""
                     width={384}
                     height={283}
