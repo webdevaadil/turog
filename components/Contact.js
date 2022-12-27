@@ -83,7 +83,7 @@ export const Contact = () => {
           </div>
           <div className="md:w-full md:ml-0 lg:w-1/2 lg:ml-4">
             <div className="block bg-white w-100">
-              <form on onSubmit={sendemail}>
+              <form  onSubmit={sendemail}>
                 <div className="form-group mb-5">
                   <input
                     type="text"

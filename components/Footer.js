@@ -5,16 +5,34 @@ import axios from "axios";
 
 const Footer = () => {
   const [serviceoffering, setserviceoffering] = useState();
+  const [newsleeter, setNewsleeter] = useState({ email: "" });
+  const [message, setMessage] = useState("");
 
   useEffect(() => {
     fetchserviceoffering();
   }, []);
-
+  const submitemail = async (e) => {
+    e.preventDefault();
+    await axios.post(
+      "http://34.122.203.107:1339/api/news-letters",
+      { data: newsleeter },
+      {
+        headers: headers,
+      }
+    );
+    setMessage("✓ The email was sent successfully");
+    setNewsleeter({
+      email: "",
+    });
+    setTimeout(() => {
+      setMessage("");
+    }, 3000);
+  };
+  let headers = {
+    Authorization:
+      "bearer 4f9279d262abf04c34eb2e03e603b321d9545e0933473e65c704e12f12c87b6be9c7668de8a178ab2ac3b6d6f578e59c92b1626d4e1f460a08cebd870e3b38acfa61337df1428a0373cbc7d5fc962248ea189b0305871522728d24be8354ca0456feccbb8b9d46e445bd71dee6d109575c9bae1e1a0f26ca36d33921a58e0fe5",
+  };
   const fetchserviceoffering = async () => {
-    let headers = {
-      Authorization:
-        "bearer 4f9279d262abf04c34eb2e03e603b321d9545e0933473e65c704e12f12c87b6be9c7668de8a178ab2ac3b6d6f578e59c92b1626d4e1f460a08cebd870e3b38acfa61337df1428a0373cbc7d5fc962248ea189b0305871522728d24be8354ca0456feccbb8b9d46e445bd71dee6d109575c9bae1e1a0f26ca36d33921a58e0fe5",
-    };
     await axios
       .get("http://34.122.203.107:1339/api/contact-informations?populate=Img", {
         headers: headers,
@@ -71,11 +89,21 @@ const Footer = () => {
         focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                       id="exampleInput91"
                       placeholder="Your Email"
+                      name="email"
+                      required
+                      value={newsleeter.email}
+                      onChange={(e) => {
+                        setNewsleeter({
+                          ...newsleeter,
+                          [e.target.name]: e.target.value,
+                        });
+                      }}
                     />
                   </div>
 
                   <button
                     type="submit"
+                    onClick={submitemail}
                     className="
      font-extrabold font-Mulish items-center inline-block px-14 bg-gradient-to-r from-red-500 to-orange-500 text-white text-sm leading-tight rounded-xl shadow-md
       ease-in-out"
@@ -83,6 +111,7 @@ const Footer = () => {
                     Subscribe
                   </button>
                 </form>
+                {message}
               </div>
             </div>
             <div className="mx-0 py-10 text-center md:text-left">
