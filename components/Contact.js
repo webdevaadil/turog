@@ -49,8 +49,6 @@ export const Contact = () => {
       setMessage("");
     }, 3000);
   };
-  console.log(email);
-  console.log(serviceoffering);
   return (
     <div className="cls-f">
       <div id="contact" className="mx-auto max-w-7xl px-4 py-2 text-center">
@@ -69,7 +67,6 @@ export const Contact = () => {
           <div className="md:w-full m-0 lg:w-1/2 mr-6">
             {serviceoffering &&
               serviceoffering.map((item, index) => {
-                console.log(item.attributes.Img.data[0].attributes.url);
                 return (
                   <img
                     className="rounded-xl block mr-0 w-full"

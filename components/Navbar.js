@@ -1,4 +1,4 @@
-import { Fragment } from 'react'
+import { Fragment, useEffect, useState } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {
   ArrowPathIcon,
@@ -16,6 +16,7 @@ import {
 } from '@heroicons/react/24/outline'
 import logo from '../components/image/TUROG-logo.webp'
 import Image from 'next/image';
+import axios from 'axios';
 
 
 const solutions = [
@@ -78,17 +79,29 @@ const recentPosts = [
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
-console.log(logo)
 export default function Example() {
+  const [Faq, setFaq] = useState();
+
+  useEffect(() => {
+    fetchFaq();
+  }, []);
+  const fetchFaq = async () => {
+    let headers = {
+      Authorization:"bearer 4f9279d262abf04c34eb2e03e603b321d9545e0933473e65c704e12f12c87b6be9c7668de8a178ab2ac3b6d6f578e59c92b1626d4e1f460a08cebd870e3b38acfa61337df1428a0373cbc7d5fc962248ea189b0305871522728d24be8354ca0456feccbb8b9d46e445bd71dee6d109575c9bae1e1a0f26ca36d33921a58e0fe5",
+    };
+    await axios.get("http://34.122.203.107:1339/api/website-info?populate=logo", {headers: headers,})
+      .then((res) => setFaq(res.data.data.attributes));
+  };
+  console.log(Faq);
   return (
     <Popover className="relative">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="flex items-center justify-between border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
-            <a href="#">
+           {Faq&& <a href="#">
               <span className="sr-only">Your Company</span>
-              <Image className="h-8 w-auto sm:h-10" src={logo.src} alt="" width={100} height={100}/>
-            </a>
+              <img className="h-8 w-auto sm:h-10" src={`http://34.122.203.107:1339${Faq.logo.data[0].attributes.url}`} alt="" width={100} height={100}/>
+            </a>}
           </div>  
           <div className="-my-2 -mr-2 md:hidden ">
             <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">

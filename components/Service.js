@@ -101,7 +101,6 @@ const Tabs = () => {
                 <div className="tab-content tab-space">
                 {serviceoffering &&
             serviceoffering.map((item, index) => {
-              console.log(item.attributes);
               return (
                   <div
                     className={openTab === index+1 ? "block" : "hidden"}

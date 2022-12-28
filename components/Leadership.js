@@ -35,7 +35,6 @@ export const Leadership = () => {
       <div className="flex justify-center leadr">
         {throghleadership &&
           throghleadership.map((item, index) => {
-            console.log(item.attributes)
             return (
               <div className="rounded-lg shadow-lg bg-white max-w-sm">
                 <a
