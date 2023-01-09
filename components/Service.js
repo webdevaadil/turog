@@ -98,7 +98,7 @@ const Tabs = () => {
             </ul>
             <div className="dgs-wrapper w-7/12 relative flex flex-col min-w-0 break-words">
               <div className="px-4 py-0 flex-auto ml-11	">
-                <div className="tab-content tab-space">
+                <div className="tab-content tab-space services-tabs-contents">
                 {serviceoffering &&
             serviceoffering.map((item, index) => {
               return (

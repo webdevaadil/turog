@@ -52,7 +52,7 @@ export default function Faq() {
                  {item.attributes.Title}
                 </AccordionHeader>
                 <AccordionBody>
-                  <p>
+                  <p className="acordian-para">
                   {item.attributes.Description}
                   </p>
                 </AccordionBody>

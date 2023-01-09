@@ -32,7 +32,7 @@ export default function Carousel() {
     <>
       <div
         id="carouselExampleCaptions"
-        className="carousel 	slide relative"
+        className="carousel 	slide relative slider-homemain"
         data-bs-ride="carousel"
       >
         <div className="carousel-indicators opacity-0 absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
@@ -66,7 +66,7 @@ export default function Carousel() {
                         </p>
                         <a
                           href="#contact"
-                          className="flex w-4/12 hovs items-center font-extrabold justify-center rounded-lg border bg-gradient-to-r from-red-500 to-orange-500  px-5 py-3 text-base  text-white shadow-sm hover:bg-indigo-700"
+                          className="carousal-bnss flex w-4/12 hovs items-center font-extrabold justify-center rounded-lg border bg-gradient-to-r from-red-500 to-orange-500  px-5 py-3 text-base  text-white shadow-sm hover:bg-indigo-700"
                         >
                          {item.attributes.Button}
                           <svg

@@ -184,18 +184,63 @@ p.font-Mulish.mb-10 br {
 .carousel-item p.font-Mulish.mb-10 {
   margin-bottom: 19px;
 }
-
+.heder-tp-stripes {
+  justify-content: space-between !important;
+}
 }
 
 @media(max-width:992px){  
-  .carousel-inner {
+  .carousel-inner{
     padding-top: 29px;
     padding-bottom: 20px;
 }
-.carousel-item h3 {
-  font-size: 31px;
-  line-height: 35px;
+.carousel-item h3,div#abts-us h2,
+div#service-of h3,.services-tabs-contents h4,.lead-main h3,
+div#faqs h3,div#contact h3{
+  font-size:30px;
+  line-height:35px;
 }
+.carousel-item p,div#abts-us p,div#service-of p,.lead-main p,div#faqs p,div#contact p{
+  
+  font-size: 16px;
+  line-height: 25px;
+}
+.heder-tp-stripes nav a {
+  margin-left: 10px !important;
+  font-size: 14px;
+}
+.leadr h5 {
+  margin-bottom: 0px;
+  font-size: 18px;
+}
+
+.slider-homemain .w-1\/2.pr-6 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 0px !important;
+} 
+.slider-homemain a.carousal-bnss {
+  margin: 0 auto;
+}
+.slider-homemain .w-1\/2 img {
+  margin: 0 auto;
+}.slider-homemain .w-1\/2 {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+.carousel-control-prev {
+  justify-content: left;
+  padding-left: 20px;
+}
+.carousel-control-next {
+  padding-right: 20px;
+}
+.flex.faq-clms {
+  padding: 0px 20px;
+}
+
 
 .fqs-main .block.relative.w-full button {
   font-size: 16px;
@@ -262,6 +307,18 @@ p.font-Mulish.mb-10 br {
   display: block;
   text-align: center;
 }
+.carousel-control-prev {
+  padding-left: 5px;
+}
+.carousel-control-next {
+  padding-right:5px;
+} 
+div#service-of h3,.lead-main h3, div#faqs h3,div#contact h3,div#service-of h3,
+.lead-main p,div#service-of p div#faqs p,div#contact p,div#service-of p,div#faqs p{
+  text-align: left;
+}
+.lead-main p br,div#contact p br{display:none;}
+
 .mbwrapper {
   z-index: 9;
 }
@@ -283,6 +340,9 @@ p.font-Mulish.mb-10 br {
 @media(max-width:640px){  
   .carousel-item .lg\:max-w-7xl {
     display: block;
+}
+.abt-main {
+  padding: 0px 1rem;
 }
 .carousel-item .lg\:max-w-7xl .w-1\/2 {
   width: 100%;
@@ -343,35 +403,11 @@ p.font-Mulish.mb-10 br {
   margin-top: 7px;
   margin-bottom: -38px;
 }
-.tab-content h4 {
-  font-size: 22px;
-  line-height: 27px;
-} 
-.fqs-main  h3.font-extrabold {
-  font-size: 25px;
-  line-height: 33px;
-}
-.cls-f  h3.font-extrabold {
-  font-size: 25px;
-  line-height: 33px;
-}
-.ser-wrapper  h3 {
-  font-size: 25px;
-  line-height: 33px;
 
-}
-.abt-main  h2{
-  font-size: 25px;
-  line-height: 33px;
-}
 p.text-base br {
   display: none;
 }
-.lead-main h3{
-  font-size: 25px;
-  line-height: 33px;
 
-}
 .fqs-main {
   margin-bottom: 13px;
 }
@@ -431,6 +467,16 @@ footer .font-extrabold {
   font-size: 25px;
   line-height: 29px;
 }
-
+.lead-main h3 {
+  margin-bottom: 5px;
+}
+.carousel-item h3, div#abts-us h2, div#service-of h3, .services-tabs-contents h4, .lead-main h3, div#faqs h3, div#contact h3 {
+  font-size: 25px;
+  line-height: 30px;
+}
+.fqs-main .block.relative.w-full button {
+  font-size: 15px;
+  line-height: 21px;
+}
 
 }
