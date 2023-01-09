@@ -143,7 +143,13 @@ background-size: 50%;
 html {
   scroll-behavior: smooth;
 }
-
+.last-contancts-sections button:hover,.form-news button:hover{
+  background: #000;
+  transition: all ease-in-out 0.5s;
+}
+.last-contancts-sections button,.form-news button{
+  transition: all ease-in-out 0.5s;
+}
 
 @media(max-width:1200px){  
   .foot-wrapper {

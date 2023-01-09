@@ -62,7 +62,7 @@ export const Contact = () => {
         </p>
       </div>
 
-      <div className="max-w-7xl m-auto cn-fo mt-9 mb-20 mx-auto">
+      <div className="max-w-7xl m-auto cn-fo mt-9 mb-20 mx-auto last-contancts-sections">
         <div className="md:block lg:flex items-center w-100 ">
           <div className="md:w-full m-0 lg:w-1/2 mr-6">
             {serviceoffering &&

@@ -332,7 +332,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="text-center p-6  border-t border-gray-300">
-              <span> © 2022 Turog Technologies. All rights reserved.</span>
+              <span> © 2023 Turog Technologies. All rights reserved.</span>
             </div>
           </div>
         </footer>
