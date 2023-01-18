@@ -23,13 +23,13 @@ const solutions = [
   {
     name: 'About Us',
     description: 'Get a better understanding of where your traffic is coming from.',
-    href: '#',
+    href: '#abts-us',
     icon: ChartBarIcon,
   },
   {
     name: 'Service Offerings',
     description: 'Speak directly to your customers in a more meaningful way.',
-    href: '#',
+    href: '#service-of',
     icon: CursorArrowRaysIcon,
   },
   {
