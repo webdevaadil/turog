@@ -348,8 +348,24 @@ div#service-of h3,.lead-main h3, div#faqs h3,div#contact h3,div#service-of h3,
     display: block;
 }
 .abt-main {
-  padding: 0px 1rem;
+  padding: 0px 0px;
 }
+.flex.faq-clms {
+  padding: 0px 0px;
+}
+.fqs-main .mx-auto.max-w-7xl.px-4.py-2.text-center.mb-8 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.form-news {
+  width: 100%;
+}
+
+div#contact {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .carousel-item .lg\:max-w-7xl .w-1\/2 {
   width: 100%;
   padding: 0;
@@ -391,9 +407,9 @@ div#service-of h3,.lead-main h3, div#faqs h3,div#contact h3,div#service-of h3,
 .leadr .rounded-lg.bg-white.max-w-sm {
   max-width: 100%;
   margin-bottom: 32px;
-}
-.form-news {
-  width: 90%;
+}.foot-wrapper .flex.justify-center.items-center.lg\:justify-between.py-10.border-b.border-gray-300 {
+  max-width: 100%;
+  display: block;
 }
 
 
@@ -424,6 +440,14 @@ p.text-base br {
   width: 100%;
   padding: 14px;
   margin-top: 14px;
+}
+
+.ser-wrapper {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.carousel-item .lg\:max-w-7xl {
+  max-width: 100%;
 }
 
 footer h6 {
