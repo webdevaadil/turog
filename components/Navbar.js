@@ -128,7 +128,7 @@ export default function Example() {
           </Popover.Group>
           <div className="hidden items-center justify-end md:flex md:flex-3 lg:w-30">
            <a
-              href="#"
+              href="#contact"
               className="ml-8 hovs inline-flex items-center justify-center whitespace-nowrap rounded-lg bg-gradient-to-r from-red-500 to-orange-500  px-8 py-3 text-base font-extrabold text-white shadow-sm hover:bg-black-500"
             >
               Get Started Today
@@ -181,7 +181,7 @@ export default function Example() {
             </div>
             <div className="space-y-6 py-6 px-5">
               <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                <a href="#abts-us" className="text-base font-medium text-gray-900 hover:text-gray-700">
                   About Us
                 </a>
 
@@ -200,7 +200,7 @@ export default function Example() {
               </div>
               <div>
                 <a
-                  href="#"
+                  href="#contact"
                   className="flex w-full hovs items-center justify-center rounded-md border bg-gradient-to-r from-red-500 to-orange-500  px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
                 >
                   Get Started Today
