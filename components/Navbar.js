@@ -33,7 +33,7 @@ const solutions = [
     icon: CursorArrowRaysIcon,
   },
   {
-    name: 'FAQ',
+    name: "FAQ's",
     description: "Connect with third-party tools that you're already using.",
     href: '#faqs',
     icon: Squares2X2Icon,
@@ -121,7 +121,7 @@ export default function Example() {
             Service Offerings
             </a>
             <a href="#faqs" className="font-Mulish text-base font-sm text-gray-500 hover:text-gray-900">
-             FAQ
+             FAQ's
             </a>
             <a href="#contact" className="font-Mulish text-base font-sm text-gray-500 hover:text-gray-900">
              Contact us
