@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useState } from 'react'
+import { Fragment, useEffect, useRef, useState } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {
   ArrowPathIcon,
@@ -93,6 +93,9 @@ export default function Example() {
       .then((res) => setFaq(res.data.data.attributes));
   };
   console.log(Faq);
+  const buttonRef = useRef();
+  const handleClickPanel = () => buttonRef.current?.click();
+ 
   return (
     <Popover className="relative">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
@@ -158,7 +161,7 @@ export default function Example() {
                   />
                 </div>
                 <div className="-mr-2">
-                  <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                  <Popover.Button ref={buttonRef} className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                     <span className="sr-only">Close menu</span>
                     <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                   </Popover.Button>
@@ -167,7 +170,7 @@ export default function Example() {
               <div className="mt-6">
                 <nav className="grid gap-y-8">
                   {solutions.map((item) => (
-                    <a
+                    <a onClick={handleClickPanel} onKeyDown={handleClickPanel}
                       key={item.name}
                       href={item.href}
                       className="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50"
@@ -189,7 +192,7 @@ export default function Example() {
                 Service Offerings
                 </a>
                 {resources.map((item) => (
-                  <a
+                  <a onClick={handleClickPanel} onKeyDown={handleClickPanel}
                     key={item.name}
                     href={item.href}
                     className="text-base font-medium text-gray-900 hover:text-gray-700"
