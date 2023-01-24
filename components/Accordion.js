@@ -16,10 +16,10 @@ export default function Faq() {
   const fetchFaq = async () => {
     let headers = {
       Authorization:
-        "bearer 4f9279d262abf04c34eb2e03e603b321d9545e0933473e65c704e12f12c87b6be9c7668de8a178ab2ac3b6d6f578e59c92b1626d4e1f460a08cebd870e3b38acfa61337df1428a0373cbc7d5fc962248ea189b0305871522728d24be8354ca0456feccbb8b9d46e445bd71dee6d109575c9bae1e1a0f26ca36d33921a58e0fe5",
+        "bearer 1942e3c9556623404db66b999199421e762776e67e46c3f7e6a230dec8cd51169fbf0ec52338230d3289af36e09065b77e7a6180369d40a070378008ce130c538dda3c1c7a34a64781f10baf05e2fb4351037cd404b0abe192163b9e39ba5a4893e15e08044e7d1b4787bc34cc35d3e353d0c7d883ce9fdcd9c085fb19569a9a",
     };
     await axios
-      .get("http://34.122.203.107:1339/api/service-offerings?populate=Img", {
+      .get("http://34.136.73.77:1339/api/service-offerings?populate=Img", {
         headers: headers,
       })
       .then((res) => setFaq(res.data.data));
